@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Helakuru Pro Max</string>
+    <string name="ime_name">Helakuru Pro Max</string>
+    <string name="translate_on">🌐 Translate: ON</string>
+    <string name="translate_off">🌐 Translate: OFF</string>
+    <string name="send_as_english">EN වලින් යවන්න</string>
+</resources>

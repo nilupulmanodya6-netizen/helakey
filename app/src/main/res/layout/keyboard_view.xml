@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#121212">
+    <!-- Translation Preview Bar -->
+    <LinearLayout
+        android:id="@+id/translationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#1E1E1E"
+        android:visibility="gone">
+        <TextView android:id="@+id/tvTranslation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#00E676"
+            android:text="EN: " />
+        <Button android:id="@+id/btnSendEn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/send_as_english"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    <!-- Suggestions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1A1A1A"/>
+    <!-- Main Keyboard Grid will be inflated dynamically -->
+    <LinearLayout android:id="@+id/keyboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <!-- Bottom Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnToggleTranslate" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="🌐 EN OFF"/>
+        <Button android:id="@+id/btnEmoji" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="😊"/>
+        <Button android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="⚙️"/>
+    </LinearLayout>
+</LinearLayout>

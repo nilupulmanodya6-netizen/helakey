@@ -1,0 +1,3 @@
+<resources>
+    <style name="KeyboardTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+</resources>
